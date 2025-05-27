@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    
+    
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+video#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.header-content {
+    position: relative;
+    margin-top: 10%;
+    
+    z-index: 1;
+    color: white;
+    text-align: center;
+    
+    top: 50%;
+    font-size: 2rem;
+    overflow-x:hidden;
+}
+
+.header-download-button {
+
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(to right, #c40000, #ff1e1e); /* rojo oscuro a rojo vivo */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow-x:hidden;
+
+    margin: 30px 0;
+}
+
+.header-download-button:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 18px rgba(255, 0, 0, 0.6);
+    overflow-x:hidden;
+}
+
+i {
+    margin: 0 10px;
+    opacity: 60%;
+}
+
+.vehicles-h1 {
+    margin-top: 300px;
+    margin-bottom: 50px;
+    text-align: center;
+    color:white;
+}
+
+.vehicles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.vehicle-card {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 24px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+
+}
+
+
+
+.vehicle-img {
+    width: 300px;
+}
