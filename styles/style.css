@@ -28,6 +28,13 @@
   font-style: normal;
 }
 
+.exo-2-exo {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 body, html {
     margin: 0;
@@ -86,6 +93,8 @@ video#bg-video {
     margin: 20px auto 30px auto;
     
 }
+
+
 
 .header-download-button:hover {
     transform: scale(1.01);
@@ -178,6 +187,35 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gn-img-container h1, .gn-img-container h2 {
+    color: white;
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    text-shadow: 2px 2px 5px black;
+}
+
+.gn-img-container h1:first-of-type {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+}
+.gn-img-container h2 {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+}
+
+.gn-img-container h1:last-of-type {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 60px;
 }
 
 .fade-overlay-bottom {
@@ -338,3 +376,117 @@ main {
     text-decoration: none;
     color: white;
 }
+
+
+
+.requisitos {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.tabla-requisitos {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tabla-requisitos th,
+.tabla-requisitos td {
+  border: 1px solid #333;
+  padding: 12px;
+  
+}
+.tabla-requisitos td {
+    text-align: left;
+}
+
+
+
+.tabla-requisitos thead {
+  background-color: #292929;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tabla-requisitos tr:nth-child(even) {
+  background-color: #222;
+}
+
+
+.footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-info {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  flex: 1 1 200px;
+}
+
+.footer-social h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin-bottom: 5px;
+}
+
+.social-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+  color: #f00;
+}
+
+.footer-dev h4 {
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
+}
+
+.footer-dev p {
+    margin: 0;
+}
+
+.footer-dev i {
+    font-size: 30px;
+    color: white;
+}
+
+.footer-dev i:hover {
+    opacity: 100%;
+}
+
