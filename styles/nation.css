@@ -38,22 +38,45 @@ body, html {
 }
 
 
-.logo-link {
-  position: absolute;
-  top: 1px;
-  left: 50px;
-  display: block;
-  width: 100px; 
-  height: 100px;
+.logo-responsive-img {
+  display: none;
 }
 
+
 .logo-img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  left: 30px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.1s ease;
 }
+
+@media (max-width: 1550px) {
+  .logo-img {
+    display: none;
+  }
+
+  .logo-responsive-img {
+    display: block;
+    width: 80px;
+  }
+
+  .nation-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-responsive-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
 
 .logo-img:hover {
   transform: scale(1.01);
@@ -84,6 +107,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  
 }
 
 .flag {
@@ -146,6 +171,7 @@ body {
 
 .gallery {
   display: flex;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -161,6 +187,7 @@ body {
 .gallery img:hover {
   transform: scale(1.03);
 }
+
 
 .download-box {
     width: 100%;
@@ -240,3 +267,95 @@ body {
     color: #f00;
     transform: scale(1.2);
   }
+
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+  }
+
+  
+
+  .left-panel, .right-panel {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .gallery img {
+    max-width: 45%;
+  }
+
+  .nation-title {
+    font-size: 2.5rem;
+  }
+
+  .header-download-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  
+
+  .logo-link {
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 20px;
+  }
+}
+
+/* Móviles (pantallas pequeñas) */
+@media (max-width: 600px) {
+  .container {
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .nation-title {
+    font-size: 2rem;
+  }
+
+  .nation-description {
+    font-size: 0.95rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  .gallery img {
+    max-width: 100%;
+  }
+
+  .flag {
+    width: 80px;
+  }
+
+  .header-download-button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+
+  .logo-link {
+    width: 60px;
+    height: 60px;
+    top: 8px;
+    left: 10px;
+  }
+
+  .close {
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+  }
+}
