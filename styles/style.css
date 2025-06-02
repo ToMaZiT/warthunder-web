@@ -184,39 +184,29 @@ main {
 }
 
 .gn-img-container .gn-img {
-  width: 100%;
-  height: 100%;
+
   object-fit: cover;
 }
 
-.gn-img-container h1, .gn-img-container h2 {
-    color: white;
-    display: flex;
-    position: absolute;
-    z-index: 3;
-    text-shadow: 2px 2px 5px black;
+.gn-img {
+  width: 100%;
+  height: 80vh;
+  background-image: url('../assets/intro-main-img.jpg');
+  background-size: cover;        /* Ajusta la imagen para cubrir todo el div */
+  background-position: center;   /* Centra la imagen */
+  background-repeat: no-repeat;  /* Evita que se repita la imagen */
+
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 
-.gn-img-container h1:first-of-type {
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-}
-.gn-img-container h2 {
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-}
 
-.gn-img-container h1:last-of-type {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 600;
-    font-size: 60px;
-}
 
 .fade-overlay-bottom {
   position: absolute;
@@ -281,6 +271,8 @@ main {
   
 }
 
+
+
 @media (max-width: 1400px) {
     .nations-grid {
         gap: 10px;
@@ -294,6 +286,10 @@ main {
         gap: 10px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
+    }
+
+    .nations-grid > .nation-btn:last-child {
+        grid-column: 2 / 3;
     }
 }
 
